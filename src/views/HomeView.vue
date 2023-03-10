@@ -6,8 +6,8 @@
             <div class="row vh70 align-items-center">
                 <div class=" col-sm-12 col-lg-6">
                     <div class="title">
-                        <h1>
-                          <span class="txt" v-for="elem in splitTitle" :key='elem'>{{elem + ' '}}</span>   
+                        <h1 class="txt">
+                          <span class="" v-for="elem in splitTitle" :key='elem'>{{elem + ' '}}</span>   
                         </h1>
                        
                     </div>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <!-- navigazione -->
-            <div class="row   orangeBand justify-content-around align-items-center ">
+            <div class="row   orangeBand text-center justify-content-around align-items-center ">
                 <div class=" col-sm-12 col-lg-3"><a class="txtWhite" href="/works">Works</a></div>
                 <!-- <div class="col-sm-12 col-lg-3"><a class="txtOrange" href="/about">About</a></div> -->
                 <div class=" col-sm-12 col-lg-3"><a class="txtWhite" href="/stack">Stack</a></div>
@@ -78,6 +78,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.txt {
+     color: white;
+    padding: 3rem 2rem;
+    line-height: 7rem;
+    font-family: Helvetica Neue;
+    font-size: 8rem;
+    font-weight: bold; //animation: fadeIn 2s ease-in-out forwards;
+}
+
 
 .txtWhite {
     font-size: 3rem;
@@ -182,14 +191,6 @@ opacity: 0;
 
 
 
-.txt {
-     color: white;
-    padding: 2rem 0rem;
-    line-height: 7rem;
-    font-family: Helvetica Neue;
-    font-size: 8rem;
-    font-weight: bold; //animation: fadeIn 2s ease-in-out forwards;
-}
 
 
 
@@ -229,14 +230,6 @@ opacity: 0;
 }
 
 //----------------------------------------------------MEDIA-QUERY---------------------------------------------------------------//
-@media only screen and (min-width: 1281px) {
-    .txt {
-        padding: 5.3rem 3rem;
-        line-height: 8rem;
-        font-size: 10rem;
-    }
-}
-
 @media only screen and (min-width: 360px) and (max-width: 768px) {
     .txt {
         line-height: 5rem;
@@ -244,4 +237,35 @@ opacity: 0;
         font-size: 5rem;
     }
 }
+
+
+@media only screen and (min-width: 1281px) and (max-width: 1300px) {
+    .txt {
+       padding: 4rem;
+        line-height: 8rem;
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1500px) {
+    .txt {
+        
+       padding: 4rem;
+        line-height: 7.8rem;
+        font-size: 8.5rem;
+    }
+}
+
+@media only screen and (min-width: 1500px)  {
+    .txt {
+        
+       padding: 5rem;
+        line-height: 8.8rem;
+        font-size: 10rem;
+    }
+}
+
+
+
+
 </style>
