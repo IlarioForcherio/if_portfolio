@@ -232,12 +232,12 @@ opacity: 0;
 //----------------------------------------------------MEDIA-QUERY---------------------------------------------------------------//
 @media only screen and (min-width: 360px) and (max-width: 768px) {
     .txt {
-         padding: 2rem;
+         padding: 2.5rem;
       
         line-height: 4rem;
-        letter-spacing: -0.2rem;
-        //text-align: center;
-        font-size: 3.5rem;
+        //letter-spacing: -0.2rem;
+        text-align: center;
+        font-size: 5rem;
     }
 
     .txtWhite {
