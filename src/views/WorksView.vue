@@ -37,7 +37,7 @@
 
                      <h2 class="pt-5 text-center txt">Gotta catch 'em <span style="color:orange">All</span></h2>
                      <p class="text-center">Click the picture below and search your own favourite Pokèmon</p>
-                    <a href="https://pokedex-if.netlify.app/"><div><img src="../assets/img/pokemon.png" alt=""></div></a> 
+                    <a href="https://pokedex-if.netlify.app/"><div><img class="img-fluid" src="../assets/img/pokemon.png" alt=""></div></a> 
             </div>
             </div>
         </div>
