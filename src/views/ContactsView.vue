@@ -8,7 +8,7 @@
                     <div class="row">
                         <!-- contact-me-here -->
                         <div class="col-lg-12">
-                            <h3  id="contact" class=" txt">Contact Me <span style="color:orange">Here</span></h3>
+                            <h3  id="contact" class="text-center txt">Contact Me <span style="color:orange">Here</span></h3>
                             <div class="line"></div>
                         </div>
                         <!-- form-contacts -->
@@ -86,5 +86,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Inserisci qui il codice SCSS per lo stile del tuo componente */
+.txt{
+    padding-top: 100px;
+    font-size: 4rem;
+}
 </style>

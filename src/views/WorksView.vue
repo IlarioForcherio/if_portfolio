@@ -1,9 +1,9 @@
 <template>
     <div>
-        <h2>this is Works</h2>
         <div class="container">
             <div class="row">
                 <div class="col">
+                     <h3  id="contact" class="text-center txt">Take a look at my <span style="color:orange">Work</span></h3>
     
     <!-- slider-video -->
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -65,5 +65,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* Inserisci qui il codice SCSS per lo stile del tuo componente */
+.txt{
+    padding: 100px;
+    font-size: 4rem;
+    
+}
 </style>

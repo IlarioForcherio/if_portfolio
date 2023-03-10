@@ -99,7 +99,18 @@ export default {
     // text-align: center;
     // color: #2c3e50;
 }
+header{
+     width: 100%;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+     background-color: rgba(0, 0, 0, 0.3) !important;
+}
 
+nav {
+
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
 
 
 * {
