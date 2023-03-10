@@ -79,19 +79,18 @@ export default {
 
 <style lang="scss" scoped>
 .txt {
-     color: white;
+   
     padding: 3rem 2rem;
     line-height: 7rem;
     font-family: Helvetica Neue;
     font-size: 8rem;
-    font-weight: bold; //animation: fadeIn 2s ease-in-out forwards;
+    font-weight: bold; 
 }
 
 
 .txtWhite {
     font-size: 3rem;
     font-family: Helvetica Neue;
-    color: white;
     font-weight: bold;
 }
 
@@ -100,6 +99,7 @@ export default {
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 

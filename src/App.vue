@@ -136,7 +136,7 @@ nav {
     font-size: 0.8rem;
     position: absolute;
     left: 10%;
-    top: 20%;
+    top: 24%;
 }
 
 .fa-sun {
