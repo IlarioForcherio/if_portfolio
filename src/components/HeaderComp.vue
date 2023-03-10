@@ -1,9 +1,9 @@
 <template>
-    <div id='app'>
-        <header>
+    <div>
+       <header class="vh10">
             <!-- <router-link to="/">Home</router-link> 
                             <router-link to="/about">About</router-link> -->
-            <nav class="shadow-lg p-3 mb-4 bg-body-tertiary rounded navbar navbar-expand-lg bg-body-tertiary vh10">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,6 +29,7 @@
                                 <i :class="['fa-regular','fa-sun' ,  !this.isDarkMode ? 'd-none' : 'd-block' ]"></i>
                                 
                             </div>
+                             
 
                         </div>
                     </div>
@@ -36,71 +37,54 @@
             </nav>
         </header>
     
-        <router-view></router-view>
-        <!-- <button class="btn btn-outline-warning" @click="toggleDarkMode">
-              Dark Mode
-            </button> -->
     </div>
 </template>
 
 <script>
+// Importa qui i componenti necessari
+
 export default {
-    name: 'App', // Cambia il nome del componente con quello desiderato
+    name: 'HeaderComp', // Cambia il nome del componente con quello desiderato
     components: {
-        // HeaderComp
+        // Aggiungi qui i componenti importati
     },
     props: {
 
     },
     data() {
         return {
-            toggle: '',
             isDarkMode: false,
         };
     },
-    beforeUpdate() {
-        localStorage.setItem('isDarkMode', this.isDarkMode)
-    },
 
     mounted() {
-        this.isDarkMode = localStorage.getItem('isDarkMode') !== 'false' ? true : false;
-    },
-    watch: {
-        isDarkMode() {
-            const htmlElement = document.querySelector('html')
-            htmlElement.setAttribute('data-bs-theme', this.isDarkMode ? 'dark' : 'light')
-        }
+
     },
     methods: {
-
-      
-        toggleDarkMode() {
+         toggleDarkMode() {
             this.isDarkMode = !this.isDarkMode
+            
+            this.$emit('emitIsisDarkMode', this.isDarkMode);
         }
-
-
+        
 
 
     },
 };
 </script>
 
-<style lang="scss">
-
-#app {
-   
-    
-   // height: 100vh; // background-color: #2b3035;
-    font-family: Avenir, Helvetica, Arial, sans-serif; // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;
-    // text-align: center;
-    // color: #2c3e50;
+<style lang="scss" scoped>
+.vh10{
+    height:10vh;
 }
- *{
-        padding:0;
-        margin:0;
-        box-sizing: border-box;
-    }
+// .fa-circle-half-stroke {
+//     color: white;
+// }
+
+// .cb {
+//     color: black;
+// }
+
 
 #icon:hover {
     transform: scale(1.1);
@@ -128,15 +112,4 @@ top:20%;
     font-size: 0.6rem;
    position: absolute;  
 }
-
-
-
-
 </style>
-
-
-
-
-
-
-

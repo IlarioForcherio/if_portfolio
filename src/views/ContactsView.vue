@@ -1,6 +1,6 @@
 <template>
 <div>
-
+<h2>this is Contacts</h2>
 </div>
 
 </template>
@@ -9,7 +9,7 @@
 // Importa qui i componenti necessari
 
 export default {
-  name: '', // Cambia il nome del componente con quello desiderato
+  name: 'ContactsView', // Cambia il nome del componente con quello desiderato
   components: {
      // Aggiungi qui i componenti importati
   },
