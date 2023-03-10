@@ -1,7 +1,9 @@
 <template>
     <div class="timeLine">
+      <h3  id="contact" class="p-5 text-center txt">This is my <span style="color:orange">Stack</span></h3>
         <!-- left -->
         <div class=" d-flex justify-content-center">
+          
             <div class="left d-flex flex-column">
                 <div class="pt-4"><img src="../assets/img/icons8-html-5-48.png" alt=""></div>
                 <div class="pt-4"><img src="../assets/img/icons8-bootstrap-48.png" alt=""></div>
@@ -57,6 +59,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.txt{
+   
+    font-size: 4rem;
+    
+}
 ul {
     padding: 0px;
     list-style: none;

@@ -2,8 +2,8 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col">
-                     <h3  id="contact" class="text-center txt">Take a look at my <span style="color:orange">Work</span></h3>
+                <div class="col-12">
+                     <h3  id="contact" class="p-5 text-center txt">Take a look at my <span style="color:orange">Work</span></h3>
     
     <!-- slider-video -->
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -32,6 +32,13 @@
                         </button>
                     </div>
                 </div>
+            
+            <div class="col-12">
+
+                     <h2 class="pt-5 text-center txt">Gotta catch 'em <span style="color:orange">All</span></h2>
+                     <p class="text-center">Click the picture below and search your own favourite Pokèmon</p>
+                    <a href="https://pokedex-if.netlify.app/"><div><img src="../assets/img/pokemon.png" alt=""></div></a> 
+            </div>
             </div>
         </div>
     
@@ -66,8 +73,12 @@ export default {
 
 <style lang="scss" scoped>
 .txt{
-    padding: 100px;
+   
     font-size: 4rem;
     
+}
+
+img{
+    width: 100%;
 }
 </style>

@@ -1,12 +1,9 @@
 <template>
     <div id='app'>
-        <header>
-                           
+        <header>    
                     <!-- <router-link to="/">Home</router-link> 
                     <router-link to="/about">About</router-link> -->
-    
-    
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg shadow-lg bg-body-tertiary rounded">
                 <div class="container-fluid d-flex justify-content-between">
                     <a class="navbar-brand" href="/"><i class="fa-solid fa-house"></i></a>
                     <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,14 +99,14 @@ export default {
 header{
      width: 100%;
     position: sticky;
-    z-index: 1;
+    z-index: 2;
     top: 0;
-     background-color: rgba(0, 0, 0, 0.3) !important;
+    // background-color: rgba(0, 0, 0, 0.3) !important;
 }
 
 nav {
 
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(33, 37, 41, 0.2) !important;
 }
 
 
