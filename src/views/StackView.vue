@@ -62,6 +62,7 @@ export default {
 .txt{
    
     font-size: 4rem;
+    font-weight: bold;
     
 }
 ul {
