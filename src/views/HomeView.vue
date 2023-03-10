@@ -56,7 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 .txt {
-    padding: 3rem 0rem;
+    padding: 4.4rem 0rem;
     line-height: 7rem;
     font-family: Helvetica Neue;
     font-size: 8rem;
@@ -101,7 +101,7 @@ img {
    
     line-height: 5rem;
     text-align:center;
-    font-size: 2rem;
+    font-size: 5rem;
    
 }
 }
