@@ -1,45 +1,51 @@
 <template>
     <div id='app'>
         <header>
-            <!-- <router-link to="/">Home</router-link> 
-                            <router-link to="/about">About</router-link> -->
-            <nav class="shadow-lg p-3 mb-4 bg-body-tertiary rounded navbar navbar-expand-lg bg-body-tertiary vh10">
-                <div class="container-fluid">
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <!-- <router-link to="/">Home</router-link>  -->
-                            <a class="nav-link" aria-current="page" href="/">Home</a>
-                            <a class="nav-link" href="/works">Works</a>
-                            <!-- <a class="nav-link" href="/about">About</a> -->
-                            <a class="nav-link" href="/stack">Stack</a>
-                            <a class="nav-link" href="/contacts">Contacts</a>
-                        </div>
-                        <!-- switch -->
-                        <div class="form-check form-switch">
-                            <!-- <i id="icon" @click="toggleDarkMode" :class="'fa-solid fa-circle-half-stroke'"></i> -->
                            
-                            <div class="form-check form-switch">
-                                <input @click="toggleDarkMode" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                                <i :class="['fa-regular','fa-moon' ,  this.isDarkMode ? 'd-none' : 'd-block' ]"></i>
-                                <i :class="['fa-regular','fa-sun' ,  !this.isDarkMode ? 'd-none' : 'd-block' ]"></i>
-                                
-                            </div>
-
+                    <!-- <router-link to="/">Home</router-link> 
+                    <router-link to="/about">About</router-link> -->
+    
+    
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid d-flex justify-content-between">
+                    <a class="navbar-brand" href="/"><i class="fa-solid fa-house"></i></a>
+                    <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <!-- <a class="nav-link" aria-current="page" href="/"><i class="fa-solid fa-house"></i></a> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/works" >Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/stack" >Stack</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contacts" >Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- switch -->
+                    <div class="form-check form-switch">
+                        <div class="form-check form-switch">
+                            <input @click="toggleDarkMode" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            <i :class="['fa-regular','fa-moon' ,  this.isDarkMode ? 'd-none' : 'd-block' ]"></i>
+                            <i :class="['fa-regular','fa-sun' ,  !this.isDarkMode ? 'd-none' : 'd-block' ]"></i>
                         </div>
+    
                     </div>
                 </div>
             </nav>
         </header>
-    
+    <!-- router -->
         <router-view></router-view>
-        <!-- <button class="btn btn-outline-warning" @click="toggleDarkMode">
-              Dark Mode
-            </button> -->
+
+
     </div>
 </template>
 
@@ -73,7 +79,7 @@ export default {
     },
     methods: {
 
-      
+
         toggleDarkMode() {
             this.isDarkMode = !this.isDarkMode
         }
@@ -86,21 +92,19 @@ export default {
 </script>
 
 <style lang="scss">
-
 #app {
-   
-    
-   // height: 100vh; // background-color: #2b3035;
+    // height: 100vh; // background-color: #2b3035;
     font-family: Avenir, Helvetica, Arial, sans-serif; // -webkit-font-smoothing: antialiased;
     // -moz-osx-font-smoothing: grayscale;
     // text-align: center;
     // color: #2c3e50;
 }
- *{
-        padding:0;
-        margin:0;
-        box-sizing: border-box;
-    }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 #icon:hover {
     transform: scale(1.1);
@@ -109,29 +113,25 @@ export default {
 #icon:active {
     transform: scale(1);
 }
+
 //toggle checkbox
-
-.form-switch{
-   position: relative;
-   
+.form-switch {
+    position: relative;
 }
-.fa-moon{
-font-size: 0.8rem;
-position: absolute;
-left:10%;
-top:20%;
 
+.fa-moon {
+    font-size: 0.8rem;
+    position: absolute;
+    left: 10%;
+    top: 20%;
 }
-.fa-sun{
-    top:30%;
+
+.fa-sun {
+    top: 30%;
     right: 30%;
     font-size: 0.6rem;
-   position: absolute;  
+    position: absolute;
 }
-
-
-
-
 </style>
 
 

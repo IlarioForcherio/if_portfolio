@@ -59,7 +59,7 @@ export default {
     padding: 3rem 0rem;
     line-height: 7rem;
     font-family: Helvetica Neue;
-    font-size: 9rem;
+    font-size: 8rem;
     font-weight: bold;
 }
 
@@ -97,6 +97,12 @@ img {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
-    // do something in this width range.
+   .txt {
+   
+    line-height: 5rem;
+    text-align:center;
+    font-size: 2rem;
+   
+}
 }
 </style>
