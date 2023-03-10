@@ -3,7 +3,7 @@
     
         <div class="container-fluid">
             <!-- intestazione -->
-            <div class="row vh70 align-items-center">
+            <div class="row  align-items-center">
                 <div class=" col-sm-12 col-lg-6">
                     <div class="title">
                         <h1 class="txt">
@@ -232,9 +232,18 @@ opacity: 0;
 //----------------------------------------------------MEDIA-QUERY---------------------------------------------------------------//
 @media only screen and (min-width: 360px) and (max-width: 768px) {
     .txt {
-        line-height: 5rem;
-        text-align: center;
-        font-size: 5rem;
+         padding: 2rem;
+      
+        line-height: 4rem;
+        letter-spacing: -0.2rem;
+        //text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .txtWhite {
+    font-size: 2rem;
+    
+    
     }
 }
 

@@ -23,15 +23,20 @@
                             <div class="mb-3 col-md-12">
                                 <textarea v-model='message' name="message" placeholder="Message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 d-flex justify-content-between align-items-center">
                                 <button value="Send" type="submit" class="btn btn-primary">Send</button>
+                                <div>
+                                <a href=""><i class="m-3 fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="m-3 fa-brands fa-square-github"></i>  </a>
+                                </div>
+                                
                             </div>
                             <div class="alert"></div>
                             <div v-if='success' class="alert alert-success" role="alert">
                                 {{successEmail}}
                             </div>
                         </form>
-    
+   
                     </div>
     
                 </div>
@@ -90,6 +95,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a{
+     color: orange;
+   font-size: 2rem;
+    text-decoration: none;
+   
+}
+a:hover{
+ transition: color 0.8s;
+    color: white;
+}
+
+
+button{
+    color: orange;
+    background-color: #212529;
+    border: 1px solid orange;
+}
+button:hover{
+   border: 1px solid orange;
+    color: white;
+    background-color: orange;
+}
+
 .txt {
     padding-top: 100px;
     font-size: 4rem;
