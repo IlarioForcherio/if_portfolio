@@ -34,7 +34,7 @@
                             <i :class="['fa-regular','fa-moon' ,  this.isDarkMode ? 'd-none' : 'd-block' ]"></i>
                             <i :class="['fa-regular','fa-sun' ,  !this.isDarkMode ? 'd-none' : 'd-block' ]"></i>
                         </div>
-    
+     
                     </div>
                 </div>
             </nav>

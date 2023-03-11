@@ -29,7 +29,7 @@
                 <div class=" col-sm-12 col-lg-3"><a class="txtWhite" href="/stack">Stack</a></div>
                 <div class=" col-sm-12 col-lg-3"><a class="txtWhite" href="/contacts">Contacts</a></div>
             </div>
-            <div class="d-flex justify-content-center mt-4">
+            <div class="d-flex justify-content-center align-items-center">
                 <div>&#169; Copyright - 2023</div>
             </div>
         </div>
@@ -80,7 +80,7 @@ export default {
 <style lang="scss" scoped>
 .txt {
    
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     line-height: 7rem;
     font-family: Helvetica Neue;
     font-size: 8rem;
