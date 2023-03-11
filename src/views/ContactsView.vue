@@ -26,8 +26,8 @@
                             <div class="col-12 d-flex justify-content-between align-items-center">
                                 <button value="Send" type="submit" class="btn btn-primary">Send</button>
                                 <div>
-                                <a href=""><i class="m-3 fa-brands fa-linkedin"></i></a>
-                                <a href=""><i class="m-3 fa-brands fa-square-github"></i>  </a>
+                                <a href="https://www.linkedin.com/in/ilario-forcherio-b413a340/"><i class="m-3 fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/IlarioForcherio"><i class="m-3 fa-brands fa-square-github"></i>  </a>
                                 </div>
                                 
                             </div>
