@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                     <h3  id="contact" class="p-5 text-center txt">This is  my <span style="color:orange">Work</span></h3>
+                     <h3  id="contact" class="p-4 text-center txt">This is  my <span style="color:orange">Work</span></h3>
     
     <!-- slider-video -->
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
