@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                     <h3  id="contact" class="p-5 text-center txt">Take a look at my <span style="color:orange">Work</span></h3>
+                     <h3  id="contact" class="p-5 text-center txt">This is  my <span style="color:orange">Work</span></h3>
     
     <!-- slider-video -->
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -73,12 +73,20 @@ export default {
 
 <style lang="scss" scoped>
 .txt{
-   
+   font-weight: bold;
     font-size: 4rem;
     
 }
 
 img{
     width: 100%;
+}
+
+
+//----------------------------------------------------MEDIA-QUERY---------------------------------------------------------------//
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    .txt {
+        font-size: 3rem;
+    }
 }
 </style>

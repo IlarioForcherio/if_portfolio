@@ -230,9 +230,9 @@ opacity: 0;
 }
 
 //----------------------------------------------------MEDIA-QUERY---------------------------------------------------------------//
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
     .txt {
-         padding: 2.5rem;
+         padding: 0rem;
       
         line-height: 4rem;
         //letter-spacing: -0.2rem;

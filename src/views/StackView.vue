@@ -202,4 +202,11 @@ img {
     transform: translateX(0);
   }
 }
+
+//----------------------------------------------------MEDIA-QUERY---------------------------------------------------------------//
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    .txt {
+        font-size: 3rem;
+    }
+}
 </style>

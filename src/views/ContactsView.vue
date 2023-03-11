@@ -123,4 +123,10 @@ button:hover{
     font-size: 4rem;
     font-weight: bold;
 }
+//----------------------------------------------------MEDIA-QUERY---------------------------------------------------------------//
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    .txt {
+        font-size: 3rem;
+    }
+}
 </style>
