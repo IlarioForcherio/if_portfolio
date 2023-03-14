@@ -83,7 +83,7 @@ export default {
     padding: 2rem 2rem;
     line-height: 7rem;
     font-family: Helvetica Neue;
-    font-size: 8rem;
+    font-size: 9rem;
     font-weight: bold; 
 }
 
