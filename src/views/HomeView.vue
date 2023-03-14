@@ -80,7 +80,7 @@ export default {
 <style lang="scss" scoped>
 .txt {
    
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
     line-height: 7rem;
     font-family: Helvetica Neue;
     font-size: 9rem;
