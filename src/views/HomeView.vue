@@ -81,7 +81,7 @@ export default {
 .txt {
    
     padding: 4rem 2rem;
-    line-height: 7rem;
+    line-height: 8rem;
     font-family: Helvetica Neue;
     font-size: 9rem;
     font-weight: bold; 
